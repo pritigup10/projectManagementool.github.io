@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><span style="color: red; font-size: 50px; font-weight: 1500;">P</span>roject Management Tool <span><i
+                        class="fa-solid fa-list-check"></i></span></h1>
+        </header>
+        <div class="imgsection"></div>
+        <main>
+            <section id="projects">
+                <h2>Projects</h2>
+                <form id="add-project-form">
+                    <input type="text" id="project-name" placeholder="Enter project name" required>
+                </form>
+            </section>
+            <section id="tasks">
+                <h2>Tasks</h2>
+                <form id="add-task-form">
+                    <input type="text" id="task-name" placeholder="Enter task name" required>
+                    <button type="submit">Add Project</button>
+                </form>
+            </section>
+        </main>
+        <div class="chatting-area">
+            <input type="text" placeholder="type your message here">
+            <button>send</button>
+        </div>
+        <div id="all-project">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
